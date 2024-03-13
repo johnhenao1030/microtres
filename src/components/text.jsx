@@ -12,7 +12,7 @@ const Text = (props) => {
             <p>Bienvenido al microfrontend tres prueba props AEM</p>
             {/* Mostramos las props formateadas dentro de un elemento <pre> para mejor legibilidad */}
             <p>Holaaa</p>
-            <p style={{ color: "red" }}>{propsAsString}</p>
+            <p style={{ color: "red" }}>{propsAsString.EVENTO.TEXTO}</p>
         </div>
     );
 }
