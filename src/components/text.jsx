@@ -1,5 +1,6 @@
 import React from "react";
 
+
 // Asegúrate de aceptar props en tu componente
 const Text = (props) => {
     // Convertimos el objeto props a una cadena de texto para mostrarlo
@@ -11,7 +12,7 @@ const Text = (props) => {
             <p>Bienvenido al microfrontend tres prueba props AEM</p>
             {/* Mostramos las props formateadas dentro de un elemento <pre> para mejor legibilidad */}
             <p>Holaaa</p>
-            <p>{propsAsString}</p>
+            <p style={{ color: "red" }}>{propsAsString}</p>
         </div>
     );
 }
