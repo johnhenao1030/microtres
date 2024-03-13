@@ -10,8 +10,8 @@ const Text = (props) => {
         <div>
             <p>Bienvenido al microfrontend tres prueba props AEM</p>
             {/* Mostramos las props formateadas dentro de un elemento <pre> para mejor legibilidad */}
-            <p>{propsAsString}</p>
             <p>Holaaa</p>
+            <p>{propsAsString}</p>
         </div>
     );
 }
