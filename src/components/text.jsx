@@ -1,31 +1,32 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-const Text = ({appData}) => {
+const Text = ({ appData }) => {
     const [formData, setFormData] = useState({
-        nombre: '',
-        apellido: '',
-        email: '',
-        ocupacion: 'estudiante'
+      nombre: '',
+      apellido: '',
+      email: '',
+      ocupacion: 'estudiante'
+    });
+  
+    const [showPopup, setShowPopup] = useState(false);
+  
+    const handleChange = (e) => {
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.value
       });
-    
-      const [showPopup, setShowPopup] = useState(false); // Estado para controlar la visualización del popup
-    
-      const handleChange = (e) => {
-        setFormData({
-          ...formData,
-          [e.target.name]: e.target.value
-        });
-      };
-    
-      const handleSubmit = (e) => {
-        e.preventDefault();
-        // Aquí puedes realizar acciones con los datos del formulario, como enviarlos a un servidor
-        console.log(formData);
-        setShowPopup(true); // Mostrar el popup después de enviar el formulario
-      };
-    
+    };
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      console.log(formData);
+      setShowPopup(true);
+    };
+  
+    useEffect(() => {
       console.log('appData desde la aplicacion externa:', appData);
+    }, []);
     
       return (
         <div className="container">
