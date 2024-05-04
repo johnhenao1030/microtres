@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import '../styles/form.css';
 
 const Text = ({ appData }) => {
     const [formData, setFormData] = useState({
