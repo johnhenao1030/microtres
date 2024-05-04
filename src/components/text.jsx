@@ -1,7 +1,7 @@
 import React from "react";
 
 const Text = ({appData}) => {
-    onst [formData, setFormData] = useState({
+    const [formData, setFormData] = useState({
         nombre: '',
         apellido: '',
         email: '',
