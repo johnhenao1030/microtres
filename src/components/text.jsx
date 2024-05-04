@@ -1,16 +1,15 @@
 import React from "react";
 
-const Text = (props) => {
+const Text = ({appData}) => {
     // Accedemos directamente al valor que queremos mostrar
     // Asumiendo que la estructura de props no cambia y siempre incluye EVENTO y TEXTO
-    const texto = props.EVENTO?.TEXTO;
+    console.log('appData desde la aplicacion externa:', appData);
+
 
     return (
         <div>
-            <p>Bienvenido al microfrontend tres prueba props AEM</p>
+            <p>Bienvenido al frontend, ojala sirva</p>
             {/* Mostramos el valor de TEXTO directamente */}
-            <p>Holaaa</p>
-            <p style={{ color: "red" }}>Mensaje de la aplicación externa: {texto}</p>
         </div>
     );
 }
