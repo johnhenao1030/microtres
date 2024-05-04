@@ -5,7 +5,7 @@ import Text from "./components/text";
 import "./index.css";
  
 const App = () => (
-  <div className="containerww">
+  <div>
     <Text />
   </div>
 );

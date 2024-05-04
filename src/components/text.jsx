@@ -30,7 +30,7 @@ const Text = ({ appData }) => {
     }, []);
     
       return (
-        <div className="container">
+        <div className="container-microfronted ">
           <form id="formulario" onSubmit={handleSubmit}>
             <div className='container-title-img'>
               <h2>Completa tus datos</h2>
